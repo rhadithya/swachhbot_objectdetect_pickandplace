@@ -1,0 +1,17 @@
+cascade_ip_mqtt.py : This uses cascade classifier approach to detect the objects.
+classifier xml files rpi_500_10haar.xml and matchbox_250_10haar.xml are used.
+The video input is streamed from the ipwebcam (ipwebcam app in mobile). The error/control instructions are sent to arduino present in the robot via mqtt. 
+
+cascade_laptopcam_mqtt.py : This uses cascade classifier approach to detect the objects.
+classifier xml files rpi_500_10haar.xml and matchbox_250_10haar.xml are used.
+The video input is streamed from the laptop camera. The error/control instructions are sent to arduino present in the robot via mqtt. It is helpful in testing purposes.
+
+wasteclassify.py : This is used to detect recyclable and non-recyclable waste from the stickers attached to trash bins. It uses trash1.xml and recycle1.xml classifier files.
+The label images for trash and recyclable waste are provided. 
+
+guiremotecontroller_mqtt.py : This is a simple gui application to control the arduino based robot through mqtt.
+
+sift_ipwebcam_mqtt : This uses scale invariant feature transform(SIFT) approach to detect the objects.The video input is streamed from the ipwebcam (ipwebcam app in mobile). The error/control instructions are sent to arduino present in the robot via mqtt. 
+
+sift_laptopcam_mqtt : This uses scale invariant feature transform(SIFT) approach to detect the objects.The video input is streamed from the laptop camera. The error/control instructions are sent to arduino present in the robot via mqtt. 
+This becomes useful during testing.
